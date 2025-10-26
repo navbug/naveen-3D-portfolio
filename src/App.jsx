@@ -8,6 +8,7 @@ import ProjectsSection from './components/ProjectsSection';
 import ExperienceSection from './components/ExperienceSection';
 import SkillsSection from './components/SkillsSection';
 import EducationSection from './components/EducationSection';
+import Navigation from './components/Navigation';
 
 
 // 3D Background Component
@@ -596,16 +597,7 @@ const App = () => {
       <ThreeBackground />
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-lg shadow-lg">
-        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            NB | Portfolio
-          </div>
-          <button className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
-            Contact Me
-          </button>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Main Content */}
       <div className="relative z-10">
